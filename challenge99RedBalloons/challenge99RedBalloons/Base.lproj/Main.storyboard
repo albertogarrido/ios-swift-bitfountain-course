@@ -25,8 +25,13 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQF-hv-hCg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
+                                    <barButtonItem title="&lt; Prev" id="9zx-jM-e4J">
+                                        <connections>
+                                            <action selector="prevBalloonPressed:" destination="BYZ-38-t0r" id="Wfg-SM-KPU"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="0e2-ag-SeN"/>
-                                    <barButtonItem title="Next" id="qVc-oW-WXg">
+                                    <barButtonItem title="Next &gt;" id="qVc-oW-WXg">
                                         <connections>
                                             <action selector="nextBalloonPressed:" destination="BYZ-38-t0r" id="fCe-v2-a50"/>
                                         </connections>
@@ -66,6 +71,8 @@
                     <connections>
                         <outlet property="balloonImage" destination="oKW-Qq-3Hp" id="tdo-QZ-dTi"/>
                         <outlet property="informationLabel" destination="ZZD-tL-VYE" id="SIV-m2-i4b"/>
+                        <outlet property="nextButton" destination="qVc-oW-WXg" id="rfg-qd-uxc"/>
+                        <outlet property="prevButton" destination="9zx-jM-e4J" id="yQ6-h5-0BV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
