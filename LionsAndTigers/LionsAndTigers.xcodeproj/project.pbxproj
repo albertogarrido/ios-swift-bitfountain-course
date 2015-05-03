@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADDD6AAC1AF67C80000DF1CC /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD6AAB1AF67C80000DF1CC /* Lion.swift */; };
 		ADF331DE1AF4BFA500BF81D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF331DD1AF4BFA500BF81D6 /* AppDelegate.swift */; };
 		ADF331E01AF4BFA500BF81D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF331DF1AF4BFA500BF81D6 /* ViewController.swift */; };
 		ADF331E31AF4BFA500BF81D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF331E11AF4BFA500BF81D6 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADDD6AAB1AF67C80000DF1CC /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 		ADF331D81AF4BFA500BF81D6 /* LionsAndTigers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsAndTigers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF331DC1AF4BFA500BF81D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADF331DD1AF4BFA500BF81D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				ADF331DD1AF4BFA500BF81D6 /* AppDelegate.swift */,
 				ADF331DF1AF4BFA500BF81D6 /* ViewController.swift */,
+				ADDD6AAB1AF67C80000DF1CC /* Lion.swift */,
 				ADF331E11AF4BFA500BF81D6 /* Main.storyboard */,
 				ADF331FD1AF4C27200BF81D6 /* Tiger.swift */,
 				ADF331E41AF4BFA500BF81D6 /* Images.xcassets */,
@@ -258,6 +261,7 @@
 				ADF331E01AF4BFA500BF81D6 /* ViewController.swift in Sources */,
 				ADF331FE1AF4C27200BF81D6 /* Tiger.swift in Sources */,
 				ADF331DE1AF4BFA500BF81D6 /* AppDelegate.swift in Sources */,
+				ADDD6AAC1AF67C80000DF1CC /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +459,7 @@
 				ADF331F91AF4BFA600BF81D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADF331FA1AF4BFA600BF81D6 /* Build configuration list for PBXNativeTarget "LionsAndTigersTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +468,7 @@
 				ADF331FC1AF4BFA600BF81D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

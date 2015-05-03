@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var randomFactLabel: UILabel!
     
     var myTigers:[Tiger] = []
+    var lions:[Lion] = []
     var currentIndex = 0;
     
     override func viewDidLoad() {
@@ -57,8 +58,22 @@ class ViewController: UIViewController {
         forthTiger.image = UIImage(named: "SiberianTiger.jpg")
         
         myTigers += [secondTiger, thirdTiger, forthTiger]
-        
 
+        var lion = Lion()
+        lion.age = 4
+        lion.isAlphaMale = false
+        lion.image = UIImage(named: "Lion.jpg")
+        lion.name = "Mufasa"
+        lion.subspecies = "West African"
+        
+        var lioness = Lion()
+        lioness.age = 3
+        lioness.isAlphaMale = false
+        lioness.image = UIImage(named: "Lioness.jpeg")
+        lioness.name = "Sarabi"
+        lioness.subspecies = "Barbary"
+        
+        self.lions = [lion, lioness]
     }
 
     override func didReceiveMemoryWarning() {
