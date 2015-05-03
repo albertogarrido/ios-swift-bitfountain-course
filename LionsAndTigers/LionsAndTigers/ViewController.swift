@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var breedLabel: UILabel!
+    @IBOutlet weak var randomFactLabel: UILabel!
     
     var myTigers:[Tiger] = []
     var currentIndex = 0;
@@ -31,10 +32,11 @@ class ViewController: UIViewController {
         
         println("My tiger name is: \(myTiger.name), it's \(myTiger.age) years old, it's breed is \(myTiger.breed), and it's image is \(myTiger.image)")
         
-        myImageView.image = myTiger.image
-        nameLabel.text = myTiger.name
-        ageLabel.text = "\(myTiger.age)"
-        breedLabel.text = myTiger.breed
+        self.myImageView.image = myTiger.image
+        self.nameLabel.text = myTiger.name
+        self.ageLabel.text = "\(myTiger.age)"
+        self.breedLabel.text = myTiger.breed
+        self.randomFactLabel.text = myTiger.randomFact()
         
         var secondTiger = Tiger()
         secondTiger.name = "Tigress"
@@ -69,21 +71,28 @@ class ViewController: UIViewController {
         var randomIndex:Int
         
         do {
-            randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+            randomIndex = getRandomNumber(maxValue: myTigers.count)
         } while (currentIndex == randomIndex)
         
         currentIndex = randomIndex
         
-        let tiger = myTigers[randomIndex]
+        var tiger = myTigers[randomIndex]
+        tiger.age = tiger.ageInTigerYearsFromAge(tiger.age)
         
         UIView.transitionWithView(self.view, duration: 1, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
                     self.myImageView.image = tiger.image
                     self.nameLabel.text = tiger.name
                     self.ageLabel.text = "\(tiger.age)"
                     self.breedLabel.text = tiger.breed
+                    self.randomFactLabel.text = tiger.randomFact()
+                    tiger.chuff(times: randomIndex, isLoud: false)
             }, completion: {
                 (finished: Bool) -> () in
         })
+    }
+    
+    func getRandomNumber(#maxValue: Int) -> Int{
+        return Int(arc4random_uniform(UInt32(maxValue)))
     }
 }
 

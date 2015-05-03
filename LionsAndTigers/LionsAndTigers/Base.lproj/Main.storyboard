@@ -41,8 +41,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.93442266819999997" green="0.9270679168" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="492" width="343" height="21"/>
+                                    <rect key="frame" x="16" y="433" width="343" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onq-b8-ofK">
@@ -50,8 +52,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.93442266819999997" green="0.9270679168" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="557" width="343" height="21"/>
+                                    <rect key="frame" x="16" y="498" width="343" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhM-U4-jrI">
@@ -59,8 +63,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.93442266819999997" green="0.9270679168" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="528" width="343" height="21"/>
+                                    <rect key="frame" x="16" y="469" width="343" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOl-Rz-N9S">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.93442266819999997" green="0.9270679168" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="527" width="343" height="71"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -72,6 +89,7 @@
                                 <exclude reference="rvU-U1-Aim"/>
                                 <exclude reference="Onq-b8-ofK"/>
                                 <exclude reference="hhM-U4-jrI"/>
+                                <exclude reference="WOl-Rz-N9S"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -81,6 +99,7 @@
                                 <include reference="rvU-U1-Aim"/>
                                 <include reference="Onq-b8-ofK"/>
                                 <include reference="hhM-U4-jrI"/>
+                                <include reference="WOl-Rz-N9S"/>
                             </mask>
                         </variation>
                     </view>
@@ -89,6 +108,7 @@
                         <outlet property="breedLabel" destination="Onq-b8-ofK" id="ZdT-gP-hEa"/>
                         <outlet property="myImageView" destination="TgU-Q9-uuc" id="jmq-gz-Wb3"/>
                         <outlet property="nameLabel" destination="rvU-U1-Aim" id="f1S-dJ-Z5V"/>
+                        <outlet property="randomFactLabel" destination="WOl-Rz-N9S" id="VCT-8a-IgP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
